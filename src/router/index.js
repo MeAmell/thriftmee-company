@@ -1,15 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ServiceView from '../views/ServiceView.vue'
+import FAQs from '../views/FAQsView.vue'
 import Footer from '../components/Footer.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
+  // history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/service',
-      name: 'service',
-      components: {default: ServiceView}
+      path: '/faqs',
+      name: 'faqs',
+      components: {default: FAQs}
     },
     {
       path: '/',

@@ -23,6 +23,9 @@
             <li class="font-bold text-white text-16 mb-4">
               <a href="/#team">The Team</a>
             </li>
+            <li class="font-bold text-white text-16 mb-4">
+              <router-link to="/faqs">FAQs</router-link>
+            </li>
           </ul>
         </div>
         <div class="col-span-2 w-full">
