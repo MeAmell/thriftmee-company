@@ -1,14 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   mode: 'jit',
-  purge: [
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    './node_modules/tw-elements/dist/js/**/*.js'
-  ],
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
   ],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
   theme: {
     extend: {
       colors: {
@@ -102,5 +100,4 @@ export default {
       // => @media (min-width: 1280px) { ... }
     },
   },
-  plugins: [],
 }
